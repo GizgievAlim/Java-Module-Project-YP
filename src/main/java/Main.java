@@ -1,11 +1,11 @@
-public void main(String[] args) {
+public static void main(String[] args) {
     Gonka go = new Gonka();
     go.start();
 }
 
 
 
-class Gonka{
+public static class Gonka{
     Scanner scanner = new Scanner(System.in);
     ArrayList<Auto> spisok = new ArrayList<Auto>();
     public void start(){
@@ -60,7 +60,7 @@ class Gonka{
     }
 }
 
-public class Auto{
+public static class Auto{
     String name;
     int speed;
     public Auto(String name,int speed){
